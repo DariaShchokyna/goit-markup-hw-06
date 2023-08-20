@@ -19,13 +19,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="modal.css" />
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0" />
     <title>WebStudio</title>
   </head>
 
   <body>
     <!-- Header -->
     <header class="cap">
-      <!-- Top Line -->
       <div class="headers container row-flex space-between">
         <nav class="header-link">
           <a class="logo link" href="./index.html" target="_blank"
@@ -34,7 +34,7 @@
           <ul class="blanks list">
             <li class="blank-li">
               <a
-                class="blank_name osnovna-storinka link"
+                class="blank_name osnovna-storinka link current"
                 href="./index.html"
                 target="blank"
                 >Studio</a
@@ -49,24 +49,34 @@
               <a class="blank_name link" href="" target="blank">Contacts</a>
             </li>
           </ul>
+          <address class="address">
+            <ul class="contact list">
+              <li>
+                <a class="address link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="address link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
         </nav>
 
         <!--Address  -->
 
-        <address class="information">
-          <ul class="address list">
-            <li>
-              <a class="contact link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contact link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <button
+            type="button"
+            class="menu-toggle js-open-menu burger-button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 22" width="32" height="22">
+              <use href="./images/icons.svg#open"></use>
+            </svg>
+          </button>
       </div>
     </header>
 
@@ -75,7 +85,11 @@
       <section class="name">
         <div class="container hero">
           <h1 class="osnova">Effective Solutions for Your Business</h1>
-          <button data-modal-open class="osnova_button" type="button">
+          <button
+            data-modal-open
+            class="osnova_button"
+            type="button"
+          >
             Order Service
           </button>
         </div>
@@ -83,7 +97,7 @@
 
       <!-- Section 2 - Preferences -->
       <section class="name_two">
-        <div class="container list-icons row-flex space-between">
+        <div class="container">
           <h2 class="visually-hidden">Section2</h2>
           <ul class="descr list">
             <li class="descreption">
@@ -140,7 +154,7 @@
 
       <!-- Section 3 - What are we doing -->
       <section class="name_three">
-        <div class="container three_section">
+        <div class="container">
           <h2 class="doing achievement">What are we doing</h2>
           <ul class="images list">
             <li class="element_images">
@@ -586,7 +600,74 @@
         </form>
       </div>
     </div>
+    <!-- Modal 2 -->
+
+    <!-- <div class="conteiner-windows is-hidden" modal>
+  <div class="modal-windows">
+    <button type="button" modal-close class="button-modal-windows">
+      <svg class="icon-modal-windows" width="8" height="8">
+        <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+      </svg>
+    </button>
+    <p class="paragrafe-modal"> 
+      Leave your contacts and we will call you back
+    </p>
+    
+  </div>
+</div> -->
+
+    <div class="phone__menu js-menu-container is-hidden" aria-expanded="false">
+      <div class="button__block">
+        <button
+          type="button"
+          aria-hidden="true"
+          class="modal__close--btn js-close-menu"
+        >
+          <svg class="icon-modal-windows" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="nav__menu">
+        <a class="phone__link" href="index.html">
+          <h2 class="phone__text">Studio</h2>
+        </a>
+        <a class="phone__link" href="portfolio.html">
+          <h2 class="phone__text">Portfolio</h2>
+        </a>
+        <a class="phone__link" href="#">
+          <h2 class="phone__text">Contacts</h2>
+        </a>
+      </div>
+      <div class="footer__menu">
+        <div class="footer__menu--phone phone__text">+11 (000) 111-11-11</div>
+        <div class="footer__menu--email"><h3>info@devstudio.com</h3></div>
+        <div class="footer__menu--icon">
+          <a class="posulania-sotsmerezh" href="">
+            <svg class="icon-sotsmerezh" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a class="posulania-sotsmerezh" href="">
+            <svg class="icon-sotsmerezh" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a class="posulania-sotsmerezh" href="">
+            <svg class="icon-sotsmerezh" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a class="posulania-sotsmerezh" href="">
+            <svg class="icon-sotsmerezh" width="24" height="24">
+              <use href="./images/icons.svg#icon-in"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
