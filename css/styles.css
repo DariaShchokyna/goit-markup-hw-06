@@ -1224,11 +1224,14 @@ text-transform: capitalize;
 
   .header-link{
     margin-right: 0;
+    display: flex;
+    justify-content: space-between;
   }
 .address{
   align-items: baseline;
   height: auto;
   font-size: 12px;
+  width: auto;
 }
 .contact{
   display: flex;
