@@ -23,49 +23,59 @@
   <body>
     <!-- Header -->
 
+    <!-- Header -->
     <header class="cap">
-      <!-- Top Line -->
       <div class="headers container row-flex space-between">
         <nav class="header-link">
           <a class="logo link" href="./index.html" target="_blank"
             >Web<span class="part_logo">Studio</span></a
           >
           <ul class="blanks list">
-            <li>
-              <a class="blank_name link" href="./index.html" target="blank"
+            <li class="blank-li">
+              <a
+                class="blank_name osnovna-storinka link current"
+                href="./index.html"
+                target="blank"
                 >Studio</a
               >
             </li>
-            <li>
-              <a
-                class="blank_name osnovna-storinka link"
-                href="./portfolio.html"
-                target="blank"
+            <li class="blank-li">
+              <a class="blank_name link" href="./portfolio.html" target="blank"
                 >Portfolio</a
               >
             </li>
-            <li>
+            <li class="blank-li">
               <a class="blank_name link" href="" target="blank">Contacts</a>
             </li>
           </ul>
+          <address class="address">
+            <ul class="contact list">
+              <li>
+                <a class="address link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="address link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
         </nav>
 
         <!--Address  -->
 
-        <address class="information">
-          <ul class="address list">
-            <li>
-              <a class="contact link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contact link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <button
+            type="button"
+            class="menu-toggle js-open-menu burger-button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 22" width="32" height="22">
+              <use href="./images/icons.svg#open"></use>
+            </svg>
+          </button>
       </div>
     </header>
 
