@@ -249,6 +249,9 @@ letter-spacing: 0.32px;
   background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), 
   url(../images/img-name.jpg);
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   }
 
 
@@ -1200,7 +1203,7 @@ text-transform: capitalize;
   margin: 0 40px 40px 40px;
 }
 
-@media screen and (max-width: 1158px)
+@media screen and (min-width: 768px) and (max-width: 1158px)
 {
   .headers{
     display: flex;
@@ -1297,14 +1300,18 @@ text-transform: capitalize;
 }
 }
 
-@media screen and (min-width: 429px)
+@media screen and (min-width: 768px)
 {
   .menu-toggle{
     display: none;
   }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) 
+{
+  .headers{
+    min-width: 0px;
+  }
   .osnova{
     font-size: 36px;
 font-style: normal;
@@ -1330,6 +1337,7 @@ text-transform: capitalize;
 }
  .descreption_name {
     text-align: center;
+    font-size: 36px;
   }
   .contact{
     visibility: hidden;
@@ -1344,6 +1352,10 @@ text-transform: capitalize;
   }
   .descreption{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .name_two{
     height: auto;
@@ -1382,7 +1394,9 @@ text-transform: capitalize;
     justify-content: center;
     width: 100%;
   }
-  
+  .name{
+    height: 432px;
+  }
   .list-klients{
     display: flex;
     flex-direction: row;
@@ -1396,9 +1410,7 @@ text-transform: capitalize;
     margin-block-end: 0em;
     width: 100%;
   }
-  .punkts-klients{
-    flex-basis: calc((100% - 16px) / 2);
-  }
+
   .posulania-klients{
     width: 190px;
   }
